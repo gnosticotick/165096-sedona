@@ -3,61 +3,55 @@
     <head>
       <meta charset="utf-8">
       <title>City of Sedona</title>
+      <link href="css/style.css" rel="stylesheet">
      </head>
-      <body>
-        <header class="main-header">
-          <div class="container">
-            <nav class="main-nav">
-              <ul>
-                <li>
-                  <a href="#">Информация</a>
-                </li>
-                <li>
-                  <a href="#">Фото и Видео</a>
-                </li>
-                <li>
-                  <a href="#">Карта Штата</a>
-                </li>
-                <li>
-                  <a href="#">Гостиницы</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
+       <body>
+         <header class="main-header">
+             <nav class="main-nav">
+               <ul>
+                 <li>
+                   <a href="#">Информация</a>
+                 </li>
+                 <li>
+                   <a href="#">Фото и Видео</a>
+                 </li>
+                 <li>
+                   <a href="#">Карта Штата</a>
+                 </li>
+                 <li>
+                   <a href="#">Гостиницы</a>
+                 </li>
+               </ul>
+             </nav>
+             <a href="#"><img src="img/index-logo.png" width="70" height="70" alt="head-logo"></a>
+           </header>
         <main class="container">
         <form class="filter" method="get">
           <h2>Инфраструктура</h2>
-            <div>
               <input type="checkbox" id="pool" name="content" checked>
               <label for="pool">Бассейн</label>
               <input type="checkbox" id="parking" name="content">
               <label for="parking">Парковка</label>
               <input type="checkbox" id="wi-fi" name="content">
               <label for="wi-fi">Wi-Fi</label>
-            </div>
           <h2>Тип Жилья</h2>
-            <div>
               <input type="checkbox" id="hotel" name="room" checked>
               <label for="hotel">Гостиница</label>
               <input type="checkbox" id="motel" name="room" checked>
               <label for="motel">Мотель</label>
               <input type="checkbox" id="apartment" name="room" checked>
               <label for="apartment">Апартаменты</label>
-            </div>
           <h2>Стоимость в Сутки</h2>
-            <div><!--Каретка--></div>
             <div>
               <input type="text" name="min-cost" value="" placeholder="0">
               <input type="text" name="max-cost" value="" placeholder="30000">
-              <!--в демо барбершопа пустое вэлью у текста, так правильно?-->
             </div>
             <button class="btn" type="submit">Показать</button>
           </form>
-          <b class="found">Найдено:<!--зависит от скрипта, не знаю как задать--></b>
+          <b class="found">Найдено:<div>3</div>
+          </b>
           <h3>Сортировка:</h3>
-            <div class="sort">
-              <ul>
+              <ul class="sort">
                 <li>
                   <a href="#">По Цене</a>
                 </li>
@@ -68,49 +62,36 @@
                   <a href="#">По Рейтингу</a>
                 </li>
               </ul>
-            <button class="sort-up"></button>
-            <button class="sort-down"></button>
-            <hr>
-            <div>
-              <img src="img/index-logo.png" width="304" height="204" alt="Amara">
-                <div>
-                  <span class="hotel-name">Amara Resort & Spa</span>
-                  <span class="caption-type">Гостиница</span>
-                  <span class="caption-cost">От 3500 Р.</span>
-                  <span class="more"><a href="#">Подробнее</a></span>
-                  <span class="book"><a href="#">Забронировать</a></span>
-                </div>
-                <div><!--Звездочки--></div>
-                <span class="rate">Рейтинг:<!--Рейтинг--></span>
-            </div>
-            <hr>
-            <div>
-              <img src="img/index-logo.png" width="304" height="204" alt="Amara">
-                <div>
-                  <span class="hotel-name">Desert Quall Inn</span>
-                  <span class="caption-type">Мотель</span>
-                  <span class="caption-cost">От 2000 Р.</span>
-                  <span class="more"><a href="#">Подробнее</a></span>
-                  <span class="book"><a href="#">Забронировать</a></span>
-                </div>
-                <div><!--Звездочки--></div>
-                <span class="rate">Рейтинг:<!--Рейтинг--></span>
-            </div>
-            <hr>
-            <div>
-              <img src="img/index-logo.png" width="304" height="204" alt="Amara">
-                <div>
-                  <span class="hotel-name">Villast At Poco Diablo</span>
-                  <span class="caption-type">Апартаменты</span>
-                  <span class="caption-cost">От 4000 Р.</span>
-                  <span class="more"><a href="#">Подробнее</a></span>
-                  <span class="book"><a href="#">Забронировать</a></span>
-                </div>
-                <div><!--Звездочки--></div>
-                <span class="rate">Рейтинг:<!--Рейтинг--></span>
-            </div>
-            <hr>
-        </main>
+            <button class="sort-up">&#x25B3;</button>
+            <button class="sort-down">&#x25BD;</button>
+              <img src="img/hotel.jpg" alt="Amara">
+                <article>
+                  <div class="hotel-name">Amara Resort & Spa</div>
+                  <div class="caption-type">Гостиница</div>
+                  <div class="caption-cost">От 3500 Р.</div>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
+                </article>
+                <div class="rate">Рейтинг:8,5</div>
+            <img src="img/hotel-2.jpg" alt="Desert">
+                <article>
+                  <div class="hotel-name">Desert Quall Inn</div>
+                  <div class="caption-type">Мотель</div>
+                  <div class="caption-cost">От 2000 Р.</div>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
+                </article>
+                <div class="rate">Рейтинг:8,9</div>
+             <img src="img/hotel-3.jpg" alt="Villas">
+                <article>
+                  <div class="hotel-name">Villast At Poco Diablo</div>
+                  <div class="caption-type">Апартаменты</div>
+                  <div class="caption-cost">От 4000 Р.</div>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="more" href="#">Забронировать</a>
+                </article>
+                <div class="rate">Рейтинг:9,2</div>
+            </main>
         <footer class="main-footer">
           <div class="container">
             <div class="hashtag">
