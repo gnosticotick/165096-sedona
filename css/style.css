@@ -1,6 +1,12 @@
 h2 {
-font-style: PTSans;
+font-family: 'PT Sans', sans-serif;
 color: black;
 font-size: 21pt;
 font-weight: bold;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 14pt;
+  font-weight: normal;
 }
