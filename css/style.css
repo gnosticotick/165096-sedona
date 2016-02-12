@@ -1,12 +1,93 @@
-h2 {
-font-family: 'PT Sans', sans-serif;
-color: black;
-font-size: 21pt;
-font-weight: bold;
-}
-body {
+body{
   font-family: 'PT Sans', sans-serif;
   color: black;
-  font-size: 14pt;
-  font-weight: normal;
+  font-size: 14px;
+  background: url("../img/index-bg.jpg") no-repeat;
+  background-position: center 56px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  	margin: 0 auto;
+  	width: 1200px;
+}
+.main-nav{
+}
+.main-nav li{
+  display: inline-block;
+    margin-bottom: 560px;
+}
+.logo{
+
+  }
+h1{
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+h2{
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 21px;
+  font-weight: bold;
+}
+.caption-top{
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.img-block-1{
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.first-img{
+  float: right;
+  width:66%;
+}
+.icon-1{
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 84px;
+  width: 33%;
+  text-align: center;
+}
+.icon-2{
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 84px;
+  width: 33%;
+  text-align: center;
+}
+.icon-3{
+  float: left;
+  margin-top: 60px;
+  margin-bottom: 84px;
+  width: 33%;
+  text-align: center;
+}
+.img-block-2{
+  float: right;
+  text-align: center;
+  width: 33%;
+}
+.second-img{
+  float: left;
+  width: 66%;
+}
+.block{
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.bot-caption{
 }
