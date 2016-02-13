@@ -88,6 +88,35 @@ h2{
   float: left;
   width: 33%;
   text-align: center;
+  margin-bottom: 54px;
 }
 .bot-caption{
+  width: auto;
+  text-align: center;
+}
+.hotel-search{
+  width: auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.hotel-search{
+  margin-bottom: 78px;
+}
+.social li{
+  display: inline-block;
+}
+.hashtag{
+  float: left;
+  margin-left: 132px;
+  margin-bottom: 52px;
+}
+.social{
+  float: left;
+  margin-left: 256px;
+  margin-bottom: 36px;
+}
+.academy{
+  float: right;
+  margin-right: 132px;
+  margin-bottom: 40px;
 }
