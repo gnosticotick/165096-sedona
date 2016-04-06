@@ -17,6 +17,8 @@
                 <li>
                   <a href="#">Фото и Видео</a>
                 </li>
+                <!--Нижние два Li меняются местами. Пытался менять флоты, не получается. Можно конечно просто поменять текст
+              но это же бэд мэнерс, так? -->
                 <li>
                   <a href="#">Карта Штата</a>
                 </li>
@@ -27,6 +29,7 @@
             </nav>
             <a class="logo" href="#"><img src="img/top-logo.png" alt="head-logo"></a>
           </header>
+          <!--Как разрулить с бекграундом? Создать под него отдельный див? Помню, ты говорил пустые нельзя -->
           <main class="main-homepage">
             <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
             <h2 class="caption-top">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон</h2>
@@ -90,12 +93,21 @@
               Укажите предполагаемые даты поездки,<br>
               и мы покажем вамлучшие предложения гостиниц в Седоне
             </div>
-            <h2 class="form-head">Поиск гостиницы в Седоне</h2>
-            <form class="hotel-search map" action="index.html" method="post">
-              <input type="date" name="movein" id="movein" value="">
-              <label for="movein">Дата Заезда</label>
-              <input type="date" name="moveout" id="moveout" value="">
-              <label for="moveout">Дата Выезда</label>
+            <!--С формой проблема в позиции. Вроде делаю как по курсам: марджин лефт 50% и на
+          пол-ширины назад, но чтот не выходит. + куда прилепить карту на бек (новый див?) -->
+            <form class="hotel-search" action="index.html" method="post">
+            <fieldset>
+             <legend class="form-head">Поиск гостиницы в Седоне</legend>
+              <label class="label" for="movein">Дата Заезда:</label>
+              <input class="date" type="date" name="movein" id="movein" value="">
+              <label class="label" for="moveout">Дата Выезда:</label>
+              <input class="date" type="date" name="moveout" id="moveout" value="">
+              <label class="label-number" for="adults">Взрослые:</label>
+              <input class="form-number" type="number" name="adults" id="adults" value="" placeholder="2">
+              <label class="label-number" for="kids">Дети:</label>
+              <input class="form-number" type="number" name="kids" id="kids" value="" placeholder="0">
+              <button class="form-button" type="submit" name="find">Найти</button>
+            </fieldset>
             </form>
         </main>
         <footer class="main-footer">

@@ -27,7 +27,11 @@
              </nav>
              <a href="#"><img src="img/top-logo.png" alt="head-logo"></a>
            </header>
-        <form class="filter" method="get">
+           <!--Подскажи, как подвинуть немного вверх фильтр под навигацию? Позишн? -->
+      <div class="container">
+        <div class="form-bg">
+        <form class="filter clearfix" method="get">
+         <div class=filter-sort>
           <h2>Инфраструктура</h2>
               <input type="checkbox" id="pool" name="content" checked>
               <label for="pool">Бассейн</label>
@@ -35,6 +39,8 @@
               <label for="parking">Парковка</label>
               <input type="checkbox" id="wi-fi" name="content">
               <label for="wi-fi">Wi-Fi</label>
+          </div>
+          <div class="filter-sort">
           <h2>Тип Жилья</h2>
               <input type="checkbox" id="hotel" name="room" checked>
               <label for="hotel">Гостиница</label>
@@ -42,16 +48,26 @@
               <label for="motel">Мотель</label>
               <input type="checkbox" id="apartment" name="room" checked>
               <label for="apartment">Апартаменты</label>
-          <h2>Стоимость в Сутки</h2>
-            <div>
-              <input type="text" name="min-cost" value="" placeholder="0">
-              <input type="text" name="max-cost" value="" placeholder="30000">
-            </div>
-            <button class="btn" type="submit">Показать</button>
+          </div>
+          <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
           </form>
-          <b class="found">Найдено:<div>3</div>
-          </b>
-          <h3>Сортировка:</h3>
+        </div>
+        <div class="second-sort">
+          <b class="found">Найдено: 3</b>
+          <b>Сортировка:</b>
               <ul class="sort">
                 <li>
                   <a href="#">По Цене</a>
@@ -65,33 +81,63 @@
               </ul>
             <button class="sort-up">&#x25B3;</button>
             <button class="sort-down">&#x25BD;</button>
-              <img src="img/hotels-1.jpg" alt="Amara">
+          </div>
+
                 <article>
+                  <img class="hotel-img" src="img/hotels-1.jpg" alt="Amara">
                   <div class="hotel-name">Amara Resort & Spa</div>
-                  <div class="caption-type">Гостиница</div>
+                  <ul class="stars">
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul>
+                  <div class="caption-type">Гостиница </div>
                   <div class="caption-cost">От 3500 Р.</div>
                   <a class="more" href="#">Подробнее</a>
                   <a class="book" href="#">Забронировать</a>
+                  <span class="rate">Рейтинг:8,5</span>
                 </article>
-                <div class="rate">Рейтинг:8,5</div>
-            <img src="img/hotels-2.jpg" alt="Desert">
+
+
                 <article>
+                  <img class="hotel-img" src="img/hotels-2.jpg" alt="Desert">
                   <div class="hotel-name">Desert Quall Inn</div>
-                  <div class="caption-type">Мотель</div>
+                  <ul class="stars">
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul>
+                  <div class="caption-type">Мотель </div>
                   <div class="caption-cost">От 2000 Р.</div>
                   <a class="more" href="#">Подробнее</a>
                   <a class="book" href="#">Забронировать</a>
+                  <span class="rate">Рейтинг:8,9</span>
                 </article>
-                <div class="rate">Рейтинг:8,9</div>
-             <img src="img/hotels-3.jpg" alt="Villas">
+
+
                 <article>
+                  <img class="hotel-img" src="img/hotels-3.jpg" alt="Villas">
                   <div class="hotel-name">Villast At Poco Diablo</div>
-                  <div class="caption-type">Апартаменты</div>
+                  <ul class="stars">
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                    <li class="star"></li>
+                  </ul>
+                  <!--Не получается перенести на следующую строку цену и тип.-->
+                  <div class="caption-type">Апартаменты </div>
                   <div class="caption-cost">От 4000 Р.</div>
                   <a class="more" href="#">Подробнее</a>
                   <a class="more" href="#">Забронировать</a>
+                  <span class="rate">Рейтинг:9,2</span>
                 </article>
-                <div class="rate">Рейтинг:9,2</div>
+            </div>
+<!--Футер размечу, там ничего сложного вроде -->
         <footer class="main-footer">
           <a class="hashtag" href=#>#VISITSEDONA</a>
               <ul class="social">
