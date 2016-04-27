@@ -8,7 +8,7 @@
      </head>
        <body>
          <div class="container">
-         <header class="main-header">
+         <header class="main-header clearfix">
              <nav class="main-nav">
                <ul>
                  <li>
@@ -25,7 +25,7 @@
                  </li>
                </ul>
              </nav>
-             <a href="#"><img src="img/top-logo.png" alt="head-logo"></a>
+            <a class="logo" href="#"><img src="img/top-logo.png" alt="head-logo"></a>
            </header>
            <!--Подскажи, как подвинуть немного вверх фильтр под навигацию? Позишн? -->
       <div class="container">
@@ -65,7 +65,7 @@
       <button class="btn-transparent" type="submit">Показать</button>
           </form>
         </div>
-        <div class="second-sort">
+        <div class="second-sort clearfix">
           <b class="found">Найдено: 3</b>
           <b>Сортировка:</b>
               <ul class="sort">
@@ -85,7 +85,7 @@
 
                 <article>
                   <img class="hotel-img" src="img/hotels-1.jpg" alt="Amara">
-                  <div class="hotel-name">Amara Resort & Spa</div>
+                  <div class="hotel-name">Amara Resort &amp; Spa</div>
                   <ul class="stars">
                     <li class="star"></li>
                     <li class="star"></li>
@@ -100,7 +100,7 @@
                   <span class="rate">Рейтинг:8,5</span>
                 </article>
 
-
+                <hr>
                 <article>
                   <img class="hotel-img" src="img/hotels-2.jpg" alt="Desert">
                   <div class="hotel-name">Desert Quall Inn</div>
@@ -118,7 +118,7 @@
                   <span class="rate">Рейтинг:8,9</span>
                 </article>
 
-
+                <hr>
                 <article>
                   <img class="hotel-img" src="img/hotels-3.jpg" alt="Villas">
                   <div class="hotel-name">Villast At Poco Diablo</div>
@@ -135,11 +135,16 @@
                   <a class="more" href="#">Подробнее</a>
                   <a class="more" href="#">Забронировать</a>
                   <span class="rate">Рейтинг:9,2</span>
+                  <hr>
                 </article>
             </div>
 <!--Футер размечу, там ничего сложного вроде -->
         <footer class="main-footer">
+          <ul>
+          <li>
           <a class="hashtag" href=#>#VISITSEDONA</a>
+          </li>
+          <li>
               <ul class="social">
                 <li>
                   <a class="vk" href="#">VK</a>
@@ -151,7 +156,11 @@
                   <a class="youtube" href="#">Youtube</a>
                 </li>
               </ul>
-            <a class="academy" href="https://htmlacademy.ru">powered by<img src="img/footer-academy.jpg"></a>
+            </li>
+            <li>
+            <a class="academy" href="https://htmlacademy.ru">website by<img src="img/footer-logo.png"></a>
+          </li>
+        </ul>
         </footer>
       </div>
       </body>

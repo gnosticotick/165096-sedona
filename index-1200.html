@@ -91,44 +91,46 @@
             <div class="bot-caption">
               <h2 class="interest">Заинтересовались?</h2>
               Укажите предполагаемые даты поездки,<br>
-              и мы покажем вамлучшие предложения гостиниц в Седоне
+              и мы покажем вам лучшие предложения гостиниц в Седоне
             </div>
-            <!--С формой проблема в позиции. Вроде делаю как по курсам: марджин лефт 50% и на
-          пол-ширины назад, но чтот не выходит. + куда прилепить карту на бек (новый див?) -->
+
             <form class="hotel-search" action="index.html" method="post">
             <fieldset>
-             <legend class="form-head">Поиск гостиницы в Седоне</legend>
-              <label class="label" for="movein">Дата Заезда:</label>
-              <input class="date" type="date" name="movein" id="movein" value="">
-              <label class="label" for="moveout">Дата Выезда:</label>
-              <input class="date" type="date" name="moveout" id="moveout" value="">
-              <label class="label-number" for="adults">Взрослые:</label>
-              <input class="form-number" type="number" name="adults" id="adults" value="" placeholder="2">
-              <label class="label-number" for="kids">Дети:</label>
-              <input class="form-number" type="number" name="kids" id="kids" value="" placeholder="0">
-              <button class="form-button" type="submit" name="find">Найти</button>
+             <a href="javascript:void(0)"; class="form-head">Поиск гостиницы в Седоне</a>
+              <div class="onclick">
+                <label class="label" for="movein">Дата Заезда:</label>
+                <input class="date" type="date" name="movein" id="movein" value="">
+                <label class="label" for="moveout">Дата Выезда:</label>
+                <input class="date" type="date" name="moveout" id="moveout" value="">
+                <label class="label-number" for="adults">Взрослые:</label>
+                <input class="form-number" type="number" name="adults" id="adults" value="" placeholder="2">
+                <label class="label-number" for="kids">Дети:</label>
+                <input class="form-number" type="number" name="kids" id="kids" value="" placeholder="0">
+                <button class="form-button" type="submit" name="find">Найти</button>
+              </div>
             </fieldset>
             </form>
         </main>
-        <footer class="main-footer">
-          <ul class="footer-sections">
+        <footer class="main-footer index-footer">
+          <ul>
             <li>
               <a class="hashtag" href=#>#VISITSEDONA</a>
             </li>
               <li>
                 <ul class="social">
                   <li>
-                    <a class="vk" href="#">VK</a>
+                    <a class="twitter" href="#"><img src="img/twitter.png" alt="twitter"></a>
                   </li>
                   <li>
-                    <a class="fb" href="#">FB</a>
+                    <a class="fb" href="#"><img src="img/facebook.png" alt="facebook"></a>
                   </li>
                   <li>
-                    <a class="youtube" href="#">Youtube</a>
+                    <a class="youtube" href="#"><img src="img/youtube.png" alt="youtube"></a>
                   </li>
-              </li>
+                </li>
+              </ul>
               <li>
-                <a class="academy" href="https://htmlacademy.ru">powered by<img src="img/footer-academy.jpg"></a>
+                <a class="academy" href="https://htmlacademy.ru">website by <img src="img/footer-logo.png"></a>
               </li>
           </ul>
         </footer>
