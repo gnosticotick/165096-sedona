@@ -27,7 +27,6 @@
              </nav>
             <a class="logo" href="#"><img src="img/top-logo.png" alt="head-logo"></a>
            </header>
-           <!--Подскажи, как подвинуть немного вверх фильтр под навигацию? Позишн? -->
       <div class="container">
         <div class="form-bg">
         <form class="filter clearfix" method="get">
@@ -63,11 +62,13 @@
         <div class="range-toggle range-toggle-max"></div>
       </div>
       <button class="btn-transparent" type="submit">Показать</button>
-          </form>
+    </div>
+    </form>
         </div>
-        <div class="second-sort clearfix">
-          <b class="found">Найдено: 3</b>
-          <b>Сортировка:</b>
+        <ul class="second-sort clearfix">
+          <li class="found">Найдено: 3</li>
+          <li>Сортировка:</li>
+            <li>
               <ul class="sort">
                 <li>
                   <a href="#">По Цене</a>
@@ -79,11 +80,15 @@
                   <a href="#">По Рейтингу</a>
                 </li>
               </ul>
+            </li>
+            <li>
             <button class="sort-up">&#x25B3;</button>
+            </li>
+            <li>
             <button class="sort-down">&#x25BD;</button>
-          </div>
-
-                <article>
+            </li>
+          </ul>
+                <article class="clearfix">
                   <img class="hotel-img" src="img/hotels-1.jpg" alt="Amara">
                   <div class="hotel-name">Amara Resort &amp; Spa</div>
                   <ul class="stars">
@@ -99,9 +104,7 @@
                   <a class="book" href="#">Забронировать</a>
                   <span class="rate">Рейтинг:8,5</span>
                 </article>
-
-                <hr>
-                <article>
+                <article class="clearfix">
                   <img class="hotel-img" src="img/hotels-2.jpg" alt="Desert">
                   <div class="hotel-name">Desert Quall Inn</div>
                   <ul class="stars">
@@ -118,8 +121,7 @@
                   <span class="rate">Рейтинг:8,9</span>
                 </article>
 
-                <hr>
-                <article>
+                <article class="clearfix">
                   <img class="hotel-img" src="img/hotels-3.jpg" alt="Villas">
                   <div class="hotel-name">Villast At Poco Diablo</div>
                   <ul class="stars">
@@ -129,17 +131,14 @@
                     <li class="star"></li>
                     <li class="star"></li>
                   </ul>
-                  <!--Не получается перенести на следующую строку цену и тип.-->
                   <div class="caption-type">Апартаменты </div>
                   <div class="caption-cost">От 4000 Р.</div>
                   <a class="more" href="#">Подробнее</a>
                   <a class="book" href="#">Забронировать</a>
                   <span class="rate">Рейтинг:9,2</span>
-                  <hr>
                 </article>
             </div>
-<!--Футер размечу, там ничего сложного вроде -->
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <ul>
         <li>
           <a class="hashtag" href=#>#VISITSEDONA</a>
@@ -155,7 +154,7 @@
               <li>
                 <a class="youtube" href="#"><img src="img/youtube.png" alt="youtube"></a>
               </li>
-            </li>
+
             </ul>
               <li>
                 <a class="academy" href="https://htmlacademy.ru">website by <img src="img/footer-logo.png"></a>

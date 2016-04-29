@@ -2,8 +2,6 @@ body{
   font-family: 'PT Sans', sans-serif;
   color: black;
   font-size: 14px;
-
-
   text-transform: uppercase;
 }
 .main-homepage {
@@ -38,10 +36,16 @@ header{
 
 }
 .main-nav li{
-  padding-top: 20px;
-  margin-left: 73px;
-  margin-right: 72px;
-  padding-left: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 120px;
+  padding-bottom: 12px;
+  padding-top:  6px;
+  font-size: 14px;
+}
+.main-nav li:nth-child(3) {
+  margin-left: 234px;
 }
 li {
   float: left;
@@ -49,11 +53,12 @@ li {
 .logo{
 position: absolute;
 width: 128px;
-height: 69px;
+height: 71px;
 top: 0;
 left: 50%;
 margin-left: -69px;
 }
+
 h1{
   font-size: 21px;
   line-height: 26px;
@@ -260,6 +265,7 @@ margin-bottom: 72px;
 .form-bg{
   background: url("../img/hotels-bg.jpg") no-repeat;
   margin-top: 5px;
+  padding-bottom: 32px;
 }
 .filter-sort {
   box-sizing: border-box;
@@ -401,10 +407,35 @@ margin-bottom: 72px;
   background: #ffffff;
 }
 .second-sort{
+  font-size: 12px;
 
+}
+.second-sort .sort-up{
+  margin-left: 492px;}
+.found {
+  font-size: 21px;
+  font-weight: bold;
+  float: left;
+  margin-right: 48px;
+  margin-left: 32px;
 }
 .sort {
   float: left;
+  display: inline-block;
+}
+.sort li {
+
+  margin-left: 32px;
+}
+.sort a {
+  font-size: 12px;
+  color: #c6c6c6;
+  font-weight: normal;
+  border-bottom: dotted;
+  border-color: #81b3d2;
+}
+.sort a:active{
+  color: #81b3d2;
 }
 .sort-up {
   float: right;
@@ -414,12 +445,11 @@ margin-bottom: 72px;
 }
 article {
   width: 100%;
-  display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 31px;
+  padding-bottom: 31px;
   float: left;
   margin-left: 72px;
-
+  display:inline-block;
 }
 
 .hotel-img {
@@ -427,14 +457,14 @@ article {
 }
 .hotel-name {
   float: left;
-  max-width: 214px;
   margin-left: 30px;
   margin-right: 550px;
   margin-bottom: 16px;
   font-size: 21px;
   font-weight: bold;
 
-
+}
+.caption-type .caption-cost{
 }
 .more {
   float: left;
@@ -461,6 +491,7 @@ article {
   padding-bottom: 8px;
 }
 .rate {
+  float: right;
   box-sizing: border-box;
   text-align: center;
   background-color: #f2f2f2;
@@ -469,7 +500,7 @@ article {
   padding-right: 14px;
   padding-top: 6px;
   padding-bottom: 6px;
-  margin-left: 522px;
+  margin-right: 144px;
 }
 .stars {
   margin: 0;
@@ -497,18 +528,13 @@ article {
 	  color: #dddddd;
 	}
 
-.caption-type {
-
-}
-.caption-cost {
-
-}
 .main-footer {
+  position: absolute;
+  top: 1000px;
   width: 100%;
   min-height: 120px;
   background-color: white;
   opacity: 0.9;
-
   vertical-align: middle;
   margin-left: 132px;
 }
