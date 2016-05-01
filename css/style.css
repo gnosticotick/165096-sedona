@@ -529,8 +529,7 @@ article {
 	}
 
 .main-footer {
-  position: absolute;
-  top: 1000px;
+  float: left;
   width: 100%;
   min-height: 120px;
   background-color: white;
@@ -546,14 +545,19 @@ article {
 }
 .social{
   margin-left: 256px;
+  display: inline-block;
+
 }
 .academy{
   margin-left: 228px;
+  vertical-align: top;
 }
 .social a {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
   width: 46px;
   min-height: 48px;
-  box-sizing: border-box;
   background-color: #81b3d2;
   margin-left: 6px;
 }
